@@ -1,10 +1,13 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 .main_content {
+    text-align: center;
     h1 {
-        color: pink;
+        margin-top: 5%;
+        color: rgb(54, 54, 54);
     }
 }

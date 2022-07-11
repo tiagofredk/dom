@@ -1,10 +1,12 @@
 export default class About {
     
-    h1 = document.createElement("h1");
     body = document.querySelector("body");
-    
+    div = document.createElement("div")
+    h1 = document.createElement("h1");
+
     constructor(){
         this.h1.innerText = "about";
-        this.body.append(this.h1);
+        this.div.append(this.h1);
+        this.body.append(this.div);
     }
 }

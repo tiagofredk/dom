@@ -16,8 +16,6 @@ switch (window.location.hash) {
     case "#About":
         navbar(obj);
         new About();
-        // console.log(myClass);
-        // about();
     case "#Help":
         help();
     default:

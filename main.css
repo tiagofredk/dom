@@ -1,10 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+.main_content {
+  text-align: center;
+}
 .main_content h1 {
-  color: pink;
+  margin-top: 5%;
+  color: rgb(54, 54, 54);
 }
 
 .navbar {
@@ -12,9 +17,13 @@
   align-items: center;
   width: 100vw;
   height: 8vh;
-  border: 1px solid black;
+  border: 5px solid black;
 }
-.navbar img {
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbar a img {
   width: 90px;
   height: 50px;
 }
@@ -26,6 +35,20 @@
 .navbar ul li {
   list-style: none;
   margin: 5%;
+}
+
+.company-container {
+  text-align: center;
+}
+.company-container h1 {
+  margin-top: 5%;
+}
+
+div {
+  text-align: center;
+}
+div h1 {
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=main.css.map */
