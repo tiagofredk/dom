@@ -21,6 +21,7 @@ try {
             new About();
             break;
         case "#Help":
+            navbar(obj);
             // help();
             console.log("Help");
             break;
