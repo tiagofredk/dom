@@ -7,27 +7,32 @@ let reload = false
 console.log(window);
 console.log(location.hash);
 
-// switch (window.location.hash) {
-//     case "":
-//         navbar(obj);
-//         home(obj.home);
-//         break;
-//     case "#Company":
-//         company();
-//         break;
-//     case "#About":
-//         about();
-//     case "#Help":
-//         help();
-//     default:
-//         console.log("404");
-// }
-
-if (window.location.hash === ""){
-    navbar(obj);
-    home(obj.home);
-    window.location.reload();
-}else if(window.location.hash === "#Company"){
-    company();
-    window.location.reload();
+switch (window.location.hash) {
+    case "":
+        navbar(obj);
+        home(obj.home);
+        break;
+    case "#Company":
+        navbar(obj);
+        company();
+        break;
+    case "#About":
+        about();
+    case "#Help":
+        help();
+    default:
+        console.log("404");
 }
+
+// if (window.location.hash === ""){
+//     navbar(obj);
+//     home(obj.home);
+//     // window.location.reload();
+    
+//     console.log(document.getElementsByClassName("navigation-item"));
+    
+// }else if(window.location.hash === "#Company"){
+//     navbar(obj);
+//     company();
+//     // window.location.reload();
+// }

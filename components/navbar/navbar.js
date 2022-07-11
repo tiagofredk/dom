@@ -11,16 +11,23 @@ export default function navbar(obj) {
         const li = document.createElement("li");
         li.classList.add("navbar-item");
         const a = document.createElement("a");
+        a.onclick = () => {
+            console.log("RELOAD");
+            console.log(location.href);
+            location.href = location.href+`#${element}`;
+            window.location.reload();
+        }
         a.innerText = element;
         a.href = `#${element}`;
         li.append(a);
         ul.append(li);
     });
     
-    const img = document.createElement("img");
-    img.src = obj.logo.img
+    const a = document.createElement("a");   
+    a.innerHTML = `<img src=${obj.logo.img}></img>`
+    a.href = "./index.html"
 
-    div.append(img, ul);
+    div.append(a, ul);
     body.append(div);
 }
 
