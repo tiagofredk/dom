@@ -12,9 +12,8 @@ export default function navbar(obj) {
         li.classList.add("navbar-item");
         const a = document.createElement("a");
         a.onclick = () => {
-            console.log("RELOAD");
-            console.log(location.href);
-            location.href = location.href+`#${element}`;
+            // location.href = location.href+`#${element}`;
+            location.href = `${location.origin}/index.html#${element}`;
             window.location.reload();
         }
         a.innerText = element;
