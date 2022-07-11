@@ -3,20 +3,31 @@ import home from "./components/home/home.js";
 import navbar from "./components/navbar/navbar.js";
 import company from "./components/company/company.js";
 
-// switch (window.location.pathname) {
-//     case "/index.html":
+let reload = false
+console.log(window);
+console.log(location.hash);
+
+// switch (window.location.hash) {
+//     case "":
 //         navbar(obj);
 //         home(obj.home);
 //         break;
-//     case "/index.html#Company":
+//     case "#Company":
 //         company();
 //         break;
+//     case "#About":
+//         about();
+//     case "#Help":
+//         help();
 //     default:
 //         console.log("404");
 // }
-if (window.location.pathname === "/index.html"){
+
+if (window.location.hash === ""){
     navbar(obj);
     home(obj.home);
-}else if(window.location.pathname === "/index.html#Company"){
+    window.location.reload();
+}else if(window.location.hash === "#Company"){
     company();
+    window.location.reload();
 }
