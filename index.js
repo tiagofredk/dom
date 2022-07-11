@@ -2,10 +2,7 @@ import obj from "./components/text/text.js";
 import home from "./components/home/home.js";
 import navbar from "./components/navbar/navbar.js";
 import company from "./components/company/company.js";
-
-let reload = false
-console.log(window);
-console.log(location.hash);
+import About from "./components/about/about.js";
 
 switch (window.location.hash) {
     case "":
@@ -17,7 +14,10 @@ switch (window.location.hash) {
         company();
         break;
     case "#About":
-        about();
+        navbar(obj);
+        new About();
+        // console.log(myClass);
+        // about();
     case "#Help":
         help();
     default:
