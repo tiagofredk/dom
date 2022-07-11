@@ -3,7 +3,7 @@ import home from "./components/home/home.js";
 import navbar from "./components/navbar/navbar.js";
 import company from "./components/company/company.js";
 import About from "./components/about/about.js";
-console.log(location);
+
 switch (window.location.hash) {
     case "":
         navbar(obj);
