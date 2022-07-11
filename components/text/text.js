@@ -11,7 +11,6 @@ const obj = {
     logo: {
         img: "https://cdn.logo.com/hotlink-ok/logo-social.png"
     }
-
 }
 
 export default obj;
