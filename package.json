@@ -1,0 +1,16 @@
+{
+  "name": "java",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "sass": "sass --watch main.scss main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
