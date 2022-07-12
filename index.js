@@ -1,4 +1,5 @@
 import obj from "./components/text/text.js";
+// import {sum} from "./components/utils.js";
 import home from "./components/home/home.js";
 import navbar from "./components/navbar/navbar.js";
 import company from "./components/company/company.js";
