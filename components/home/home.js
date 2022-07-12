@@ -24,6 +24,8 @@ export default function home(obj) {
         let p = document.createElement("p");
         let title = document.createElement("p");
 
+        div.classList.add("calculator-container");
+
         title.innerText = "Calculator";
 
         input.addEventListener("input", () => {
