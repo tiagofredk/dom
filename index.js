@@ -3,7 +3,7 @@ import home from "./components/home/home.js";
 import navbar from "./components/navbar/navbar.js";
 import company from "./components/company/company.js";
 import About from "./components/about/about.js";
-import Page404 from "./components/404/404.js"
+import Page404 from "./components/404/404.js";
 
 // Render the pages acordingly to the location.hash
 try {
@@ -22,12 +22,10 @@ try {
             break;
         case "#Help":
             navbar(obj);
-            // help();
             console.log("Help");
             break;
         default:
             new Page404();
-            console.log("no matches 404");
             break;
     }
 } catch (error) {
