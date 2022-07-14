@@ -4,13 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "sass": "sass --watch main.scss main.css"
+    "startnode": "node index.js",
+    "sass": "sass --watch main.scss main.css",
+    "start": "webpack-dev-server --config ./webpack.config.js",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.53.0"
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.5.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }

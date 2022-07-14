@@ -1,3 +1,4 @@
+import "./main.scss";
 import obj from "./components/text/text.js";
 // import {sum} from "./components/utils.js";
 import home from "./components/home/home.js";
